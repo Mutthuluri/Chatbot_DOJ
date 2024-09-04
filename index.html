@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Department of Justice, India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #003366;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .info-section {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .button-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-group button {
+            background-color: #003366;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button-group button:hover {
+            background-color: #002244;
+        }
+        footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .chatbot-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px; /* Adjust position as needed */
+        }
+        .chatbot-button button {
+            background-color: #003366;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .chatbot-button button:hover {
+            background-color: #002244;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Department of Justice, India</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Divisions</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="info-section">
+            <h2>Welcome to the Department of Justice, India</h2>
+            <p>
+                The Department of Justice in India is responsible for the administration of justice, the implementation of constitutional mandates, and the development of policies for strengthening the legal and judicial systems. 
+                Our mission is to ensure the rule of law, provide access to justice for all citizens, and maintain an efficient and transparent judicial system.
+            </p>
+            <p>
+                The department oversees judicial reforms, manages legal aid programs, and collaborates with various state and central government agencies to uphold the rights of every citizen. Learn more about our divisions, recent news, and ongoing initiatives.
+            </p>
+        </div>
+        <div class="button-group">
+            <button onclick="location.href='login.html'">Login</button>
+            <button onclick="location.href='signup.html'">Sign Up</button>
+        </div>
+    </div>
+    
+    <!-- Chatbot button (only on index page) -->
+    <div class="chatbot-button">
+        <button onclick="window.voiceflow.chat.open()">Chat with Us</button>
+    </div>
+
+    <!-- Voiceflow chatbot script -->
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+                window.voiceflow.chat.load({
+                    verify: { projectID: '66d56d5b7f0b84ecf050d20e' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production'
+                });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+    </script>
+</body>
+<footer>
+    <p>&copy; 2024 Department of Justice, India. All rights reserved.</p>
+</footer>
+</html>
